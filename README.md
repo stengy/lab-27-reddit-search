@@ -12,7 +12,7 @@
 ## Learning Objectives  
 * Students will learn to test react components using jest and enzyme 
 * Students will learn to manage controlled inputs
-* Students will learn to pass data from parrent to child through props
+* Students will learn to pass data from parent to child through props
 
 ## Requirements  
 #### Configuration  
@@ -25,10 +25,10 @@ Your lab directory must include
 * **package.json** -- with all dependencies and dev-dependencies 
 * **yarn.lock** -- with the yarn lockfile
 * **webpack.config.js** -- with webpack config
-* **src/** -- conating the froned code
+* **src/** -- containing the front end code
 * **src/main.js** -- containing the entire app
-* **src/style** -- conating your sass
-* **src/style/main.scss** -- conating the froned code
+* **src/style** -- containing your sass
+* **src/style/main.scss** -- containing the front end code
  
 #### Feature Tasks 
 Create the following components and structure them according to the following diagram.  
@@ -53,17 +53,17 @@ App
 
 ###### SearchResultList 
 * If there are topics in the application state it should display the unordered list 
-* Each list item in the unordered list should conain the following
+* Each list item in the unordered list should contain the following
   * an anchor tag with a href to the topic.url 
     * inside the anchor a heading tag with the topic.title 
-    * inside the ancor a p tag with the number of topic.ups 
+    * inside the anchor a p tag with the number of topic.ups 
 
 #### Test
 * Test RedditSearchForm
   * Test your onChange handler
   * Test your onSubmit handler
 * Test RedditTopicListing 
-  * make sure your view has the apropriate content based of the state of your application
+  * make sure your view has the appropriate content based of the state of your application
 
 ####  Documentation  
 Write a description of the project in your README.md
