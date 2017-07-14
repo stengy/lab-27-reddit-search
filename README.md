@@ -51,7 +51,7 @@ App
   * on success it should pass the results to the application state
   * on failure it should add a class to the form called error and turn the form's inputs borders red
 
-###### SearchResultList 
+###### SearchResultList Component
 * If there are topics in the application state it should display the unordered list 
 * Each list item in the unordered list should contain the following
   * an anchor tag with a href to the topic.url 
