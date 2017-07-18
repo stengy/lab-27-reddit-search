@@ -59,11 +59,7 @@ App
     * inside the anchor a p tag with the number of topic.ups 
 
 #### Test
-* Test RedditSearchForm
-  * Test your onChange handler
-  * Test your onSubmit handler
-* Test RedditTopicListing 
-  * make sure your view has the appropriate content based of the state of your application
+* no testing today
 
 ####  Documentation  
 Write a description of the project in your README.md
