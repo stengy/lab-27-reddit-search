@@ -52,6 +52,8 @@ App
   * on failure it should add a class to the form called error and turn the form's inputs borders red
 
 ###### SearchResultList Component
+* Should inerrit all search results through props
+* This component does not need to have its own state!
 * If there are topics in the application state it should display the unordered list 
 * Each list item in the unordered list should contain the following
   * an anchor tag with a href to the topic.url 
