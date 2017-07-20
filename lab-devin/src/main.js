@@ -9,21 +9,51 @@ class RedditSearchForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      subRedditName: '',
+      subReddit: '',
+      searchLimit: '',
     }
 
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleLimitChange = this.handleLimitChange.bind(this)
     this.handleSubRedditNameChange = this.handleSubRedditNameChange.bind(this)
+
 
   }
 
-  handleSubRedditnameChannge(e) {
+  handleSubRedditNameChannge(e) {
     this.setState({subRedditName: e.target.value})
+  }
+
+  handleLimitChange(e) {
+    this.setState({searchLimit: e.target.value})
   }
 
   handleSubmit(e) {
     e.preventDefault()
-    superagent.get(`${API_URL}/${this.state.subRedditName}.json`)
-    .then()
+    this.props.searchSub(this.state.subReddit, this.state.searchLimit)
+  }
+
+  render() {
+    return (
+      <div className='form-box'>
+        <form onSubmit={this.handleSubmit} className="search-form" >
+          <input
+            type='text'
+            name='subReddit'
+            placeHolder='subReddit'
+            value={this.state.subReddit}
+            onChange={this.state.handlesubRedditNameChange}
+          />
+          <input
+            type='text'
+            name='searchLimit'
+            placeHolder='number of threads desired'
+            value={this.state.searchLimit}
+            onChange={this.state.handleLimitChange}
+          />
+        </form>
+      </div>
+
+    )
   }
 }
